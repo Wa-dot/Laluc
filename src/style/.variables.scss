@@ -16,7 +16,7 @@ $primary-color: #584283;
 $secondary-color: #4E57D6;
 $white: #edede5;
 $black: #000000;
-$grey: #3c362a;
+$grey: #47453f;
 $grey2: #242424;
 
 //Color wine
@@ -32,4 +32,9 @@ $button-color: #4CAF50;
 
 // Img
 $logo: url("/logo.png");
-$bg-cover: url("/Laluc/harvestGrapevine.JPG");
+$bg-cover: url("/frontPage.jpg");
+
+//media
+$maxWidthMediaPhone : 399px;
+$maxWidthMedia : 999px;
+$intWidthMedia : 799px;

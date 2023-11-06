@@ -28,6 +28,11 @@ const router = createRouter({
       component: () => import('../pages/ProductsPage.vue')
     },
     {
+      path: '/products/:id?',
+      name: 'products',
+      component: () => import('../pages/ProductsPage.vue')
+    },
+    {
       path: '/about-us',
       name: 'about-us',
       component: () => import('../pages/AboutPage.vue')
@@ -51,6 +56,11 @@ const router = createRouter({
       path: '/terroir',
       name: 'terroir',
       component: () => import('../pages/TerroirPage.vue')
+    },
+    {
+      path: '/recipes',
+      name: 'recipes',
+      component: () => import('../pages/RecipesPage.vue')
     }
   ]
 })

@@ -1,9 +1,9 @@
-
 <template>
     <section id="cover">
-        <h1>{{ $t('home.header') }}</h1>
+        <h1 class="title-cover">{{ $t("home.header") }}</h1>
 
     </section>
+    <Popup/>
     <section id="product-home">
         <div class="container reveal">
             <h2 class="home-section-name">{{ $t("products.header") }}</h2>
@@ -13,7 +13,7 @@
 
 
     <section id="terroir-home">
-        <div class="container reveal">
+        <div class="container reveal .top">
             <h2 class="home-section-name">{{ $t("terroir.title") }}</h2>
             <div class="text-container">
                 <div class="text-box">
@@ -25,41 +25,12 @@
         </div>
     </section>
     <section id="terroir-home">
-        <div class="container reveal">
-            <h2 class="home-section-name">{{ $t("histoire.title") }}</h2>
+        <div class="container reveal .top">
+            <h2 class="home-section-name">{{ $t("history.title") }}</h2>
             <div class="text-container">
                 <div class="text-box">
                     <p>
-                        {{ $t("histoire.intro") }}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about-us-home">
-        <div class="container reveal">
-            <h2 class="home-section-name">Template qu'on peut utiliser</h2>
-            <div class="text-container">
-                <div class="text-box">
-                    <h3>Section Text</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                        eius molestiae perferendis eos provident vitae iste.
-                    </p>
-                </div>
-                <div class="text-box">
-                    <h3>Section Text</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                        eius molestiae perferendis eos provident vitae iste.
-                    </p>
-                </div>
-                <div class="text-box">
-                    <h3>Section Text</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                        eius molestiae perferendis eos provident vitae iste.
+                        {{ $t("history.intro") }}
                     </p>
                 </div>
             </div>
@@ -68,8 +39,8 @@
 </template>
 
 <script lang="ts">
-import Slider from '../components/Slider.vue'
-
+import Slider from "../components/Slider.vue"
+import Popup from "../components/Popup.vue"
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -77,85 +48,91 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
-        } else {
-            reveals[i].classList.remove("active");
-        }
+        var elementVisible = 120;
+        reveals[i].classList.toggle("active", elementTop < windowHeight - elementVisible);
     }
+
 }
+mounted: reveal();
 
 window.addEventListener("scroll", reveal);
 
 export default {
 
     components: {
-        Slider
+        Slider,
+        Popup
     }
-}
+
+} 
 </script>
 
 <style lang="scss">
-@import "../components/animation/scrollAnimation.scss";
-@import "../style/style.scss";
+ @import "../style/style.scss";
 
+ #content {
+     margin-top: 0;
+ }
 
-#content {
-    margin-top: 0;
-}
+ #cover {
+     background-image: $bg-cover;
+     background-repeat: no-repeat;
+     background-size: cover;
+     font: 3vw $logo-font;
+     color: $white;
+     text-shadow: 5px 5px 10px $black;
+ }
 
-#cover {
-    background-image: $bg-cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font: bold 2.5vw $logo-font;
-    text-shadow: 1px 1px 1px $white;
-    color: $primary-color;
-}
+ .title-cover{
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        font-size:calc(30px + 3vw);
+ }
 
-.home-section-name {
-    text-align: center;
-    text-transform: uppercase;
-    color: $primary-color;
-    font-weight: bold;
-    font-size: 3vw;
-    margin-bottom: 1ev;
-}
+ .home-section-name {
+     text-align: center;
+     text-transform: uppercase;
+     color: $primary-color;
+     font-weight: bold;
+     font-size: calc(20px + 2vw);
+     margin-bottom: 1ev;
+ }
 
-.text-box {
-    color: $primary-color;
-    font-size: 150%;
-    text-align: justify;
-}
+ .text-box {
+     color: $primary-color;
+     font-size: calc(15px + 1vw);
+     text-align: justify;
+ }
 
+ section {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
-section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ section .container {
+     margin: 50px;
+ }
 
-section .container {
-    margin: 50px;
-}
+ section .text-container {
+     display: flex;
+ }
 
-section .text-container {
-    display: flex;
-}
+ section .text-container .text-box {
+     margin: 0.5vw 0.5vw;
+     padding: 0.5vw;
+ }
 
-section .text-container .text-box {
-    margin: 20px;
-    padding: 20px;
-}
+ .reveal {
+     opacity: 0;
+     transform: translateY(50px) scale(0.9);
+     transition: 0.5s ease-in-out;
+ }
 
-section .text-container .text-box h3 {
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
+ .reveal.active {
+     transform: translateY(0) scale(1);
+     opacity: 1;
+ }
 </style>
-

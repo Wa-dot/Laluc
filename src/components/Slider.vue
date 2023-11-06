@@ -1,27 +1,10 @@
 <template>
-    <div class="carousel">
-        <div class="carousel-content">
-            <button class="carousel-button -prev" @click="prev"><svg width="50" height="50">
-                    <circle cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="none" />
-                    <line x1="40" y1="25" x2="10" y2="25" stroke="black" stroke-width="3" />
-                    <line x1="20" y1="15" x2="10" y2="25" stroke="black" stroke-width="3" />
-                    <line x1="20" y1="35" x2="10" y2="25" stroke="black" stroke-width="3" />
-                </svg>
-            </button>
-            <div class="carousel-track" ref="track">
-                <div class="carousel-item" v-for="product in  this.nbOfProducts" :key="product.id">
-                    <img :src=this.productsImg[product] v-bind:alt=$t(this.getTextAlt(product)) class="carouselPicture">
-                    <h3 class="products-title">{{ $t(this.getText(product, '.name')) }}</h3>
-                </div>
-            </div>
-            <button class="carousel-button -next" @click="next"><svg width="50" height="50">
-                    <circle cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="none" />
-                    <line x1="10" y1="25" x2="40" y2="25" stroke="black" stroke-width="3" />
-                    <line x1="30" y1="15" x2="40" y2="25" stroke="black" stroke-width="3" />
-                    <line x1="30" y1="35" x2="40" y2="25" stroke="black" stroke-width="3" />
-                </svg></button>
-        </div>
-    </div>
+    <router-link to="/products" class="products">
+        <figure v-for="product in  nbOfProducts" @click="pathOncClick(product)" class="item">
+            <img :src=productsImg[product] v-bind:alt=$t(getTextAlt(product))>
+            <figcaption>{{ $t(getText(product, '.name')) }}</figcaption>
+        </figure>
+    </router-link>
 </template>
   
 <script lang='ts'>
@@ -35,52 +18,110 @@ export default {
     data() {
         return {
             currentIndex: 0,
-            interval: null,
             nbOfProducts: numberInList.products,
-            productsImg: [],
-            products: {}
+            products: {},
+            productsImg: [] as string[]
         }
-    },
-    beforeDestroy() {
-        clearInterval(this.interval);
     },
     mounted() {
         this.productsImg = images.products;
     },
     methods: {
-        next() {
-            this.currentIndex += 1;
-            if (this.currentIndex >= this.nbOfProducts - 2) {
-                this.currentIndex = 0;
-            }
-            this.moveCarousel();
-        },
-        prev() {
-            this.currentIndex -= 1;
-            if (this.currentIndex < 0) {
-                this.currentIndex = this.nbOfProducts - 3;
-            }
-            this.moveCarousel();
-        },
-        goTo(index) {
-            this.currentIndex = index;
-            this.moveCarousel();
-        },
-        moveCarousel() {
-            const track = this.$refs.track;
-            track.style.transform = `translateX(-${this.currentIndex * 100 / 3}%)`;
-        },
         getText(productNumber: number, value: string) {
             return 'products.product' + String(productNumber) + value;
         },
         getTextAlt(productNumber: number) {
             return 'products.product' + String(productNumber) + '.img.alt';
+        },
+        pathOncClick(productNumber: number) {
+            var objet = {
+                value: String(productNumber), expiration: new Date().getTime() + 1000 * 4,
+            };
+            localStorage.setItem("productNumber", JSON.stringify(objet));
         }
     }
 }
 </script>
-  
+
 <style lang="scss">
-@import "./Slider.scss";
+@import "../style/style.scss";
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.item>* {
+    grid-area: 1/1;
+    transition: .4s;
+    min-width: 100%;
+}
+
+.item figcaption {
+    display: grid;
+    align-items: end;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    -webkit-mask:
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    font: 1.5rem/1.5 sans-serif;
+}
+
+.item:hover figcaption {
+    --_i: 0%;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+@supports not (-webkit-mask-clip: text) {
+    .item figcaption {
+        -webkit-mask: none;
+        color: #fff;
+    }
+}
+
+@media (max-width: $maxWidthMedia) {
+    .item figcaption {
+        --_i: 0%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        max-width: 90%;
+        font-size: 2ew;
+    }
+}
+
+@media (max-width: $intWidthMedia) {
+    .item figcaption {
+        --_i: 0%;
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+        min-width: 90%;
+        font-size: calc(15px + 2vw);
+    }
+}
 </style>
-  ../store

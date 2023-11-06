@@ -9,18 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@intlify/unplugin-vue-i18n": "^0.11.0",
-    "@intlify/vite-plugin-vue-i18n": "^7.0.0",
-    "axios": "^1.5.0",
-    "babel": "^6.23.0",
-    "depcheck": "^1.4.7",
+    "@intlify/unplugin-vue-i18n": "^1.5.0",
     "path": "^0.12.7",
-    "sass": "^1.63.5",
-    "url": "^0.11.1",
-    "vue": "^3.2.47",
-    "vue-i18n": "^9.3.0-beta.19",
-    "vue-router": "^4.2.2",
-    "vue-slick-carousel": "^1.0.6"
+    "sass": "^1.69.5",
+    "vue-i18n": "^9.6.5",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

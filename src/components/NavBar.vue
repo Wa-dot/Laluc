@@ -95,12 +95,22 @@ ul.nav-links {
     padding: 0 5%;
     display: flex;
     padding-right: 0;
+    margin-right: 2vw;
 
 }
 
 ul.nav-links li {
     list-style: none;
+    margin: 0 1vw;
 
+    background:
+        linear-gradient($white 0 0) bottom /var(--d, 0) 1.5px no-repeat;
+    transition: 0.5s;
+
+}
+
+ul.nav-links li:hover {
+    --d: 100%;
 }
 
 ul.nav-links a,
@@ -108,11 +118,11 @@ ul.nav-links img {
     text-decoration: none;
     color: $white;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 100;
     display: flex;
-    margin: 0 25px;
     transition: all 0.3s ease-in;
 }
+
 
 #burger {
     display: none;
@@ -158,6 +168,14 @@ ul.dropdown-menu a {
 .lang {
     width: 1.5em;
     cursor: pointer;
+    border-radius: 50%;
+    background:
+        radial-gradient(transparent 50%, rgba(0, 0, 0, 0.5)) center/200% 200% no-repeat;
+    transition: 0.5s;
+}
+
+.lang:hover {
+    background-size: 100% 100%;
 }
 
 /* Mobile */
@@ -232,4 +250,5 @@ ul.dropdown-menu a {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}</style>
+}
+</style>

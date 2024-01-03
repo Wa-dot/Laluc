@@ -1,47 +1,44 @@
 <template>
     <router-link to="/products" class="products">
-        <figure v-for="product in  nbOfProducts" @click="pathOncClick(product)" class="item">
-            <img :src=productsImg[product] v-bind:alt=$t(getTextAlt(product))>
-            <figcaption>{{ $t(getText(product, '.name')) }}</figcaption>
-        </figure>
+      <figure v-for="product in nbOfProducts" :key="product" @click="pathOnClick(product)" class="item">
+        <img :src="productsImg[product]" :alt="$t(getTextAlt(product))">
+        <figcaption>{{ $t(getText(product, '.name')) }}</figcaption>
+      </figure>
     </router-link>
-</template>
+  </template>
   
-<script lang='ts'>
-import { images, numberInList } from '../store'
-
-export default {
+  <script lang="ts">
+  import { images, numberInList } from '../store';
+  
+  export default {
     name: 'Slider',
-    props: {
-        products: Array
-    },
     data() {
-        return {
-            currentIndex: 0,
-            nbOfProducts: numberInList.products,
-            products: {},
-            productsImg: [] as string[]
-        }
+      return {
+        currentIndex: 0,
+        nbOfProducts: numberInList.products,
+        productsImg: [] as string[],
+      };
     },
     mounted() {
-        this.productsImg = images.products;
+      this.productsImg = images.products;
     },
     methods: {
-        getText(productNumber: number, value: string) {
-            return 'products.product' + String(productNumber) + value;
-        },
-        getTextAlt(productNumber: number) {
-            return 'products.product' + String(productNumber) + '.img.alt';
-        },
-        pathOncClick(productNumber: number) {
-            var objet = {
-                value: String(productNumber), expiration: new Date().getTime() + 1000 * 4,
-            };
-            localStorage.setItem("productNumber", JSON.stringify(objet));
-        }
-    }
-}
-</script>
+      getText(productNumber: number, value: string) {
+        return 'products.product' + String(productNumber) + value;
+      },
+      getTextAlt(productNumber: number) {
+        return 'products.product' + String(productNumber) + '.img.alt';
+      },
+      pathOnClick(productNumber: number) {
+        var objet = {
+          value: String(productNumber),
+          expiration: new Date().getTime() + 1000 * 4,
+        };
+        localStorage.setItem('productNumber', JSON.stringify(objet));
+      },
+    },
+  };
+  </script>
 
 <style lang="scss">
 @import "../style/style.scss";
@@ -49,6 +46,7 @@ export default {
 .products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    text-decoration: none;
 }
 
 .item {
@@ -57,31 +55,38 @@ export default {
     overflow: hidden;
     cursor: pointer;
     margin: 15px;
+    
 }
 
 .item>* {
     grid-area: 1/1;
     transition: .4s;
     min-width: 100%;
+    
 }
 
 .item figcaption {
     display: grid;
     align-items: end;
-    color: #0000;
+    color: $white;
     padding: .75rem;
     background: var(--c, #0009);
     clip-path: inset(0 var(--_i, 100%) 0 0);
-    -webkit-mask:
+    
+    font: 1.5rem/1.5 sans-serif;
+    mask:
         linear-gradient(#000 0 0),
         linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    -webkit-mask-clip: text, padding-box;
+    mask-composite: xor;
+    mask-clip: text, padding-box;
     font: 1.5rem/1.5 sans-serif;
+    
+    
 }
 
 .item:hover figcaption {
     --_i: 0%;
+    
 }
 
 .item:hover img {

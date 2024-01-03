@@ -3,12 +3,13 @@ import { reactive } from "vue";
 export const images = reactive({
     products: [
         '/Laluc/packedBottles.jpg',
-        '/bottleWineTest.png',
-        '/bottleWineTest.png',
-        '/bottleWineTest.png',
-        '/bottleWineTest.png',
-        '/bottleWineTest.png',
-        '/bottleWineTest.png'],
+        'BottleBGless/BrutSmall.png',
+        'BottleBGless/BrutRoseSmall.png',
+        'BottleBGless/ReserveSmall.png',
+        'BottleBGless/EveillescenceSmall.png',
+        'BottleBGless//bottleWineTest.png',
+        'BottleBGless//bottleWineTest.png',
+        'BottleBGless//bottleWineTest.png'],
     employee: [
         '/ppTest.jpg',
         '/ppTest.jpg',
@@ -42,7 +43,7 @@ export const information = reactive({
 });
 
 export const numberInList = reactive({
-    products: 5,
+    products: 4,
     employee: 3,
     sn: 4,
     terroir: 3,

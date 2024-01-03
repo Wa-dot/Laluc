@@ -151,6 +151,7 @@
         },
         "product5": {
             "name": "Ratafia",
+            "subtitle": "",
             "description": "Go la clem, go !",
             "category": "Vin",
             "img": {

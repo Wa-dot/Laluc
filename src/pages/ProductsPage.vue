@@ -4,7 +4,7 @@
             {{ $t("products.header") }}
         </h1>
         <article class="card" v-for="products in nbOfProducts" :key="products">
-            <div class="card-content" :id=productId[products-1] ref={{products}}>
+            <div class="card-content" :id=productId[products-1]>
                 <img v-if="(products % 2) == 1" :src=productsImg[products] v-bind:alt=$t(getTextAlt(products))
                     class="profile-image-left">
                 <div class="profile-info"
@@ -48,7 +48,7 @@ export default {
             return 'products.product' + String(productsNumber) + value;
         },
         getTextAlt(productsNumber: number) {
-            return 'products.product' + String(productsNumber) + '.alt';
+            return 'products.product' + String(productsNumber) + '.img.alt';
         },
         scrollToTarget() {
             var target = localStorage.getItem("productNumber");
@@ -72,7 +72,12 @@ export default {
 <style lang="scss">
 @import "../style/style.scss";
 
-
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .right {
     text-align: right;
 }
@@ -102,7 +107,6 @@ export default {
     padding-top: 20px;
     text-align: justify;
 }
-
 @media (max-width: $maxWidthMedia ) {
     .card-content {
         padding: 20px 5px 20px 5px;
@@ -131,6 +135,7 @@ export default {
     .card {
         margin: 5% 5% 15px 5%;
     }
+    
 }
 </style>
   

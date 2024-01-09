@@ -21,7 +21,11 @@ export const images = reactive({
         './twitter.svg',
         './insta.svg',
         './linkedin.svg'],
-    homePage: ['/Laluc/frontPage.jpg']
+    homePage: ['/Laluc/frontPage.jpg'],
+    map: ['mapChampagen.png',
+        'mapChampagenFocus.png',
+        'mapChampagen2.png',
+        'mapChampagenFocus2.png',]
 });
 
 export const information = reactive({

@@ -45,7 +45,7 @@
 
 .products {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat($num-of-product, 1fr);
     text-decoration: none;
 }
 

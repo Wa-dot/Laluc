@@ -24,6 +24,7 @@
                     </p>
                 </div>
             </div>
+            <img @mouseover="map = 3" @mouseleave="map = 2" :src="mapImage[map]" class="map">
         </div>
     </section>
     <section id="terroir-home">
@@ -43,6 +44,7 @@
 <script lang="ts">
 import Slider from "../components/Slider.vue"
 import Popup from "../components/Popup.vue"
+import { images } from '../store'
 
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -61,24 +63,28 @@ window.addEventListener("scroll", reveal);
 
 
 export default {
-
+    data() {
+        return {
+            mapImage: images.map,
+            map: 2
+        }
+    },
     components: {
         Slider,
         Popup
     },
     mounted() {
         const arrow = document.querySelector('.arrow');
-        setTimeout(() => {
-            if (arrow) {
-                arrow.animate([
-                    { left: '0' },
-                    { left: '10px' },
-                    { left: '0' }
-                ], {
-                    duration: 700,
-                                });
-            }
-        }, 1000);
+        if (arrow) {
+            arrow.animate([
+                { left: '0' },
+                { left: '5px' },
+                { left: '0' }
+            ], {
+                duration: 900,
+                iterations: Infinity
+            });
+        }
         //scrollCover() {
         var scrollTo = document.querySelectorAll("#cover");
         scrollTo.forEach((element) => {
@@ -139,7 +145,7 @@ export default {
 
 .text-box {
     color: $primary-color;
-    font-size: calc(15px + 1vw);
+    font-size: calc(15px + 0.7vw);
     text-align: justify;
 }
 
@@ -181,8 +187,9 @@ section .text-container .text-box {
     height: 50px;
     cursor: pointer;
     rotate: 90deg;
-    bottom: 5%;
-    opacity: 50%;
+    bottom: 0%;
+    opacity: 40%;
+    left: calc(50% - 40px);
 }
 
 .arrow {
@@ -211,5 +218,19 @@ section .text-container .text-box {
     top: 12px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
     transform: rotate(-45deg);
+}
+
+.map {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    // border: 1px solid $primary-color;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    border-radius: 2%;
+    width: 40vw;
+    cursor: pointer;
+}
+.map:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
 }
 </style>

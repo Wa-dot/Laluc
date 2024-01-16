@@ -11,7 +11,7 @@ export const images = reactive({
         './twitter.svg',
         './insta.svg',
         './linkedin.svg'],
-    homePage: ['frontPage.jpg'],
+    homePage: ['frontPage2.pg'],
     map: ['mapChampagne.png',
         'mapChampagneFocus.png'],
     logo: ['VDC-logo.png'],

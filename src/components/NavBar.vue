@@ -16,9 +16,9 @@
             <li @click="closeMobileNav()">
                 <router-link to="/terroir" class="unline-center">{{ $t("nav.terroir") }}</router-link>
             </li>
-            <img v-if="$i18n.locale === 'fr'" src="../assets/icon/flags/us.svg" alt="lang fr" class="lang"
+            <img v-if="$i18n.locale === 'fr'" src="../assets/icon/flags/us.svg" alt="language fr" class="lang"
                 @click="changeLanguage()">
-            <img v-else src="../assets/icon/flags/france.svg" alt="lang us" class="lang" @click="changeLanguage()">
+            <amp-img v-else src="../assets/icon/flags/france.svg" alt="lang us" class="lang" @click="changeLanguage()"/>
         </ul>
 
         <div @click="openMobileNav()" id="burger">

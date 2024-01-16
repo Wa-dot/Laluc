@@ -13,11 +13,7 @@ const router = createRouter({
         metaTags: [
           {
             name: 'description',
-            content: 'The home page of our app.'
-          },
-          {
-            property: 'og:description',
-            content: 'The home page of our app.'
+            content: 'Page with all the products of the Domaine Laluc'
           }
         ]
       }
@@ -31,11 +27,6 @@ const router = createRouter({
       path: '/products/:id?',
       name: 'products',
       component: () => import('../pages/ProductsPage.vue')
-    },
-    {
-      path: '/about-us',
-      name: 'about-us',
-      component: () => import('../pages/AboutPage.vue')
     },
     {
       path: '/contact',
@@ -52,11 +43,6 @@ const router = createRouter({
       name: 'legalNotice',
       component: () => import('../pages/LegalNoticePage.vue')
     },
-    {
-      path: '/terroir',
-      name: 'terroir',
-      component: () => import('../pages/TerroirPage.vue')
-    }
   ]
 })
 

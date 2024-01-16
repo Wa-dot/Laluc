@@ -35,7 +35,7 @@
                     <p>
                         {{ $t("history.intro") }}
                     </p>
-                    <img :src="logoVDC" class="VDC">
+                    <img :src="logoVDC" alt="logo VDC" class="VDC">
                 </div>
             </div>
         </div>

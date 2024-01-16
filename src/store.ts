@@ -2,19 +2,19 @@ import { reactive } from "vue";
 
 export const images = reactive({
     products: [
-        'LalucBottles/Brut.png',
-        'LalucBottles/BrutRose.png',
-        'LalucBottles/Reserve.png',
-        'LalucBottles/Eveillescence.png',
-        'LalucBottles/Eveillescence.png'],
+        'LalucBottles/Brut.webp',
+        'LalucBottles/BrutRose.webp',
+        'LalucBottles/Reserve.webp',
+        'LalucBottles/Eveillescence.webp',
+        'LalucBottles/Eveillescence.webp'],
     sn: ['/facebook.svg',
         './twitter.svg',
         './insta.svg',
         './linkedin.svg'],
-    homePage: ['frontPage2.pg'],
-    map: ['mapChampagne.png',
-        'mapChampagneFocus.png'],
-    logo: ['VDC-logo.png'],
+    homePage: ['frontPage.webp'],
+    map: ['mapChampagne.webp',
+        'mapChampagneFocus.webp'],
+    logo: ['VDC-logo.webp'],
 });
 
 export const information = reactive({

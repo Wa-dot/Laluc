@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div id="logo">
-            <router-link to="/"><img src='/logo.svg' alt="logo Laluc" />
+            <router-link to="/"><img src='/logo.png' alt="logo Laluc" />
                 <div id="txtLogo">{{ $t('nav.name') }}</div>
             </router-link>
         </div>

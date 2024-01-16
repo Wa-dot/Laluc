@@ -1,7 +1,7 @@
 <template>
     <router-link to="/products" class="products">
       <figure v-for="product in nbOfProducts" :key="product" @click="pathOnClick(product)" class="item">
-        <img :src="productsImg[product]" :alt="$t(getTextAlt(product))">
+        <img :src="productsImg[product-1]" :alt="$t(getTextAlt(product))">
         <figcaption>{{ $t(getText(product, '.name')) }}</figcaption>
       </figure>
     </router-link>
@@ -96,6 +96,7 @@
 @supports not (-webkit-mask-clip: text) {
     .item figcaption {
         -webkit-mask: none;
+        mask: none;
         color: #fff;
     }
 }

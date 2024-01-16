@@ -1,4 +1,5 @@
 <template>
+  <SpeedInsights/>
   <div id="app">
     <Navbar />
   </div>
@@ -9,6 +10,7 @@
 </template>
 
 <script lang="ts">
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import FootBar from './components/FootBar.vue';
 import Navbar from './components/NavBar.vue';
 import { useI18n } from 'vue-i18n';

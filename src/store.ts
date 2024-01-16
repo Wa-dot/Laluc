@@ -2,30 +2,19 @@ import { reactive } from "vue";
 
 export const images = reactive({
     products: [
-        '/Laluc/packedBottles.jpg',
-        'BottleBGless/BrutSmall.png',
-        'BottleBGless/BrutRoseSmall.png',
-        'BottleBGless/ReserveSmall.png',
-        'BottleBGless/EveillescenceSmall.png',
-        'BottleBGless//bottleWineTest.png',
-        'BottleBGless//bottleWineTest.png',
-        'BottleBGless//bottleWineTest.png'],
-    employee: [
-        '/ppTest.jpg',
-        '/ppTest.jpg',
-        '/ppTest.jpg',
-        '/ppTest.jpg',
-        '/ppTest.jpg',
-        '/ppTest.jpg'],
+        'LalucBottles/Brut.png',
+        'LalucBottles/BrutRose.png',
+        'LalucBottles/Reserve.png',
+        'LalucBottles/Eveillescence.png',
+        'LalucBottles/Eveillescence.png'],
     sn: ['/facebook.svg',
         './twitter.svg',
         './insta.svg',
         './linkedin.svg'],
-    homePage: ['/Laluc/frontPage.jpg'],
-    map: ['mapChampagen.png',
-        'mapChampagenFocus.png',
-        'mapChampagen2.png',
-        'mapChampagenFocus2.png',]
+    homePage: ['frontPage.jpg'],
+    map: ['mapChampagne.png',
+        'mapChampagneFocus.png'],
+    logo: ['VDC-logo.png'],
 });
 
 export const information = reactive({
@@ -47,8 +36,7 @@ export const information = reactive({
 });
 
 export const numberInList = reactive({
-    products: 4,
-    employee: 3,
+    products: 5,
     sn: 4,
     terroir: 3,
 });

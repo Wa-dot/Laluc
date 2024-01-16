@@ -24,7 +24,7 @@
                     </p>
                 </div>
             </div>
-            <img @mouseover="map = 3" @mouseleave="map = 2" :src="mapImage[map]" class="map">
+            <img @mouseover="map = 1" @mouseleave="map = 0" :src="mapImage[map]" alt="Map Champagne" class="map">
         </div>
     </section>
     <section id="terroir-home">
@@ -35,6 +35,7 @@
                     <p>
                         {{ $t("history.intro") }}
                     </p>
+                    <img :src="logoVDC" class="VDC">
                 </div>
             </div>
         </div>
@@ -66,7 +67,8 @@ export default {
     data() {
         return {
             mapImage: images.map,
-            map: 2
+            map: 0,
+            logoVDC: images.logo[0]
         }
     },
     components: {
@@ -232,5 +234,13 @@ section .text-container .text-box {
 }
 .map:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+.VDC {
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    // border: 1px solid $primary-color;
+    border-radius: 50%;
+    width: 20vw;
 }
 </style>

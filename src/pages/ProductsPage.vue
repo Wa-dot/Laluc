@@ -15,7 +15,7 @@
                     <img :src=productsImg[products] v-bind:alt=$t(getTextAlt(products)) class="little-media">
                     <p class="description">{{ $t(getText(products, '.description')) }}</p>
                 </div>
-                <img v-if="(products % 2 == 0)" :src=productsImg[products] v-bind:alt=$t(getTextAlt(products))
+                <img v-if="(products % 2 == 0)" :src=productsImg[products-1] v-bind:alt=$t(getTextAlt(products))
                     class="profile-image-right">
             </div>
         </article>

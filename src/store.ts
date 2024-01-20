@@ -31,7 +31,7 @@ export const information = reactive({
         phone2: '+33 622248963',
         email: 'cxlaluc@orange.fr',
         facebook: 'https://www.facebook.com/',
-        instagram: 'https://www.instagram.com/'
+        instagram: 'https://www.instagram.com/champagne.xavierlaluc/'
     },
 });
 

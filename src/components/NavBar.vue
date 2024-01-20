@@ -10,9 +10,21 @@
             <li @click="closeMobileNav()">
                 <router-link to="/products" class="unline-center">{{ $t("nav.product") }}</router-link>
             </li>
+            <li @click="closeMobileNav()">
+                <router-link to="/" @click="scrollToSection('terroir-home')" class="unline-center">{{ $t("nav.terroir")
+                }}</router-link>
+            </li>
+            <li @click="closeMobileNav()">
+                <router-link to="/" @click="scrollToSection('history-home')" class="unline-center">{{ $t("nav.about-us")
+                }}</router-link>
+            </li>
+            <li @click="closeMobileNav()">
+                <router-link to="/contact" class="unline-center">{{ $t("nav.contact")
+                }}</router-link>
+            </li>
             <img v-if="$i18n.locale === 'fr'" src="../assets/icon/flags/us.svg" alt="language fr" class="lang"
                 @click="changeLanguage()">
-            <amp-img v-else src="../assets/icon/flags/france.svg" alt="lang us" class="lang" @click="changeLanguage()"/>
+            <img v-else src="../assets/icon/flags/france.svg" alt="lang us" class="lang" @click="changeLanguage()" />
         </ul>
 
         <div @click="openMobileNav()" id="burger">
@@ -42,6 +54,18 @@ export default {
         },
         changeLanguage() {
             this.$i18n.locale === 'fr' ? this.$i18n.locale = 'en' : this.$i18n.locale = 'fr'
+        },
+        scrollToSection(sectionId: string) {
+            const sectionElement = document.getElementById(sectionId);
+            if (sectionElement && sectionElement instanceof HTMLElement) {
+                sectionElement.addEventListener('load', () => {
+                    sectionElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                    this.closeMobileNav();
+                });
+            }
         }
     }
 }
@@ -241,5 +265,4 @@ ul.dropdown-menu a {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
-</style>
+}</style>

@@ -27,7 +27,7 @@
             <img @mouseover="map = 1" @mouseleave="map = 0" :src="mapImage[map]" alt="Map Champagne" class="map">
         </div>
     </section>
-    <section id="terroir-home">
+    <section id="history-home">
         <div class="container reveal .top">
             <h2 class="home-section-name">{{ $t("history.title") }}</h2>
             <div class="text-container">

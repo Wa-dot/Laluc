@@ -2,7 +2,7 @@
     <nav>
         <div id="logo">
             <router-link to="/"><img src='/logo.webp' alt="logo Laluc" />
-                <div id="txtLogo">{{ $t('nav.name') }}</div>
+                <div id="txtLogo"><strong>{{ $t('nav.name') }}</strong></div>
             </router-link>
         </div>
 
@@ -10,16 +10,12 @@
             <li @click="closeMobileNav()">
                 <router-link to="/products" class="unline-center">{{ $t("nav.product") }}</router-link>
             </li>
-            <li @click="closeMobileNav()">
+            <!-- <li @click="closeMobileNav()">
                 <router-link to="/" @click="scrollToSection('terroir-home')" class="unline-center">{{ $t("nav.terroir")
                 }}</router-link>
-            </li>
+            </li> -->
             <li @click="closeMobileNav()">
-                <router-link to="/" @click="scrollToSection('history-home')" class="unline-center">{{ $t("nav.about-us")
-                }}</router-link>
-            </li>
-            <li @click="closeMobileNav()">
-                <router-link to="/contact" class="unline-center">{{ $t("nav.contact")
+                <router-link to="/schedule" class="unline-center">{{ $t("contact.contactUs")
                 }}</router-link>
             </li>
             <img v-if="$i18n.locale === 'fr'" src="../assets/icon/flags/us.svg" alt="language fr" class="lang"

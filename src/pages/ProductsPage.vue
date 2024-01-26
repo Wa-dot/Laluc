@@ -5,14 +5,14 @@
         </h1>
         <article class="card" v-for="products in nbOfProducts" :key="products">
             <div class="card-content" :id=productId[products-1]>
-                <img v-if="(products % 2) == 1" :src=productsImg[products] v-bind:alt=$t(getTextAlt(products))
+                <img v-if="(products % 2) == 1" :src=productsImg[products-1] v-bind:alt=$t(getTextAlt(products))
                     class="profile-image-left">
                 <div class="profile-info"
                     v-bind:class="(products % 2) == 0 ? { 'right': true, 'left': false } : { 'left': true, 'right': false }">
                     <h3 class="title-product">{{
                         $t(getText(products, '.name')) }} : {{ $t(getText(products, '.subtitle')) }}</h3>
                     <p class="category">{{ $t(getText(products, '.category')) }}</p>
-                    <img :src=productsImg[products] v-bind:alt=$t(getTextAlt(products)) class="little-media">
+                    <img :src=productsImg[products-1] v-bind:alt=$t(getTextAlt(products)) class="little-media">
                     <p class="description">{{ $t(getText(products, '.description')) }}</p>
                 </div>
                 <img v-if="(products % 2 == 0)" :src=productsImg[products-1] v-bind:alt=$t(getTextAlt(products))

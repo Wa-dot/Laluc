@@ -151,7 +151,7 @@
         "product5": {
             "name": "Ratafia",
             "subtitle": "",
-            "description": "Go la clem, go !",
+            "description": "Découvrez l'exquise saveur du ratafia, capturée dans chaque goutte de cette bouteille artisanale d'exception. Notre ratafia, élaboré avec passion et savoir-faire, offre une expérience gustative unique qui éveillera vos sens. Ce délicieux apéritif dévoile un équilibre parfait entre la douceur des fruits et la chaleur subtile de l'alcool. Les arômes envoûtants de noix, de fruits secs et d'épices créent une symphonie harmonieuse qui éveillera votre palais à chaque gorgée. Cette bouteille de ratafia incarne l'art de la mixologie, prête à être dégustée telle quelle, en apéritif, ou à être intégrée dans des cocktails sophistiqués. Son profil de saveurs complexe en fait un choix idéal pour accompagner des fromages fins, des fruits secs ou simplement pour célébrer les moments spéciaux de la vie. Chaque bouteille est le fruit d'une tradition séculaire, alliant expertise artisanale et ingrédients de qualité supérieure. Offrez-vous ou offrez à vos proches ce trésor gustatif, et laissez-vous emporter par l'élégance et le raffinement du ratafia. Un véritable bijou pour les amateurs de plaisirs délicats, cette bouteille incarne l'essence même de la convivialité et de la sophistication.",
             "category": "Vin",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -187,5 +187,9 @@
     "history": {
         "title": "Qui sommes nous ?",
         "intro": "Vigneron propriétaire, récoltant coopérateur depuis 3 générations, nous apportons toute notre attention aux parcelles issues de nombreuses transmissions remontant à des origines connues depuis 1670. Certaines de ces terres se sont trouvées être propices à la culture de la vigne de par leurs sous-sols à tendance calcaire et sablonneux-calcaire, leurs pentes orientées sud-est et leur bel ensoleillement. Ces 3 éléments réunis apportent aux vins un développement de qualité avec une touche de fraîcheur. Ainsi, suite à l'utilisation de porte-greffe éloignant la maladie du phylloxera, les replantations de vigne dans la famille ont eu lieu dès 1956. Chaque année, si les soins débutent dès la taille de la vigne en hiver, ils ne finissent que par la vendange à la main. C'est pourquoi Xavier aime à dire à ses 3 enfants, Clémence, Héloïse et Pierre-Baptiste « Le végétal nous parle ». Attentifs à l'environnement dans lequel nous évoluons depuis de nombreuses années, nous récupérons les eaux de pluie, travaillons le sol et enherbons nos vignes. De cette manière, nous tentons de limiter autant que possible les intrants et de réduire à notre échelle le Co2. L'exploitation est certifiée VDC : viticulture durable en Champagne."
+    },
+    "schedule": {
+        "title": "Horaires d'ouverture",
+        "intro": "Nous sommes ouverts du lundi au vendredi de 16h30 à 22h et le samedi de 9h30 à 12h."
     }
 }

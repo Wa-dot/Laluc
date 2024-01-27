@@ -33,7 +33,7 @@
         </div>
         <div class="info-block" id="address-block">
           <h2>{{ $t("contact.address") }}</h2>
-          <p>{{ address }}<br>{{ postalCode }} {{ city }}<br>{{ country }}</p>
+          <p id="adress">{{ address }} - {{ postalCode }} {{ city }} {{ country }}</p>
         </div>
       </div>
       <transition name="fade">
@@ -79,14 +79,14 @@ export default {
       this.showPopup = true;
       setTimeout(() => {
         this.showPopup = false;
-      }, 300);
+      }, 400);
     },
     copyPhoneNumber2() {
       navigator.clipboard.writeText(this.telReceiver2);
       this.showPopup = true;
       setTimeout(() => {
         this.showPopup = false;
-      }, 300);
+      }, 400);
     }
   }
 }
@@ -115,12 +115,20 @@ export default {
 
 .popup {
   position: fixed;
+  top: 90%;
   left: 50%;
+  z-index: 2000;
+  background-color:$primary-color;
+  width: max-content;
+  height: max-content;
   transform: translate(-50%, -50%);
-  background-color: $secondary-color;
-  color: white;
-  padding: 12px;
+  padding: 15px;
   border-radius: 4px;
+  color: $white;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px $black;
+
 }
 
 .fade-enter-active,
@@ -148,12 +156,19 @@ textarea {
 
 button[type=submit],
 button {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+button[type=submit]{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
 }
 
 button[type=submit]:hover,
@@ -163,9 +178,13 @@ button:hover {
 
 .copy {
   cursor: pointer;
-  margin: 7px 0;
+  margin: 17px 0;
+  font-size: large;
 }
-
+#adress{
+  margin-top: 20px;
+  font-size: larger;
+}
 
 @media (max-width: 799px) {
   .titleContact {

@@ -6,6 +6,32 @@
         </div>
     </section>
     <Popup />
+    <section id="schedule-home">
+        <div class="container reveal .top">
+            <h2 class="home-section-name">{{ $t("schedule.title") }}</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <div v-for="day in 5" class="schedule-content">
+                        <p class="day">
+                            {{ $t("schedule.intro[0][" + String(day - 1) + "]") }}
+                        </p>
+                        <p class="hours">
+                            {{ $t("schedule.intro[1][0]") }}
+                        </p>
+                    </div>
+                    <div class="schedule-content">
+                        <p class="day">
+                            {{ $t("schedule.intro[0][5]") }}
+                        </p>
+                        <p class="hours">
+                            {{ $t("schedule.intro[1][1]") }}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="product-home">
         <div class="container reveal">
             <h2 class="home-section-name">{{ $t("products.header") }}</h2>
@@ -226,21 +252,54 @@ section .text-container .text-box {
     margin: auto;
     margin-top: 10px;
     display: block;
-    // border: 1px solid $primary-color;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
     border-radius: 2%;
     width: 40vw;
-    cursor: pointer;
 }
+
 .map:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
 }
+
 .VDC {
     margin: auto;
     margin-top: 10px;
     display: block;
-    // border: 1px solid $primary-color;
     border-radius: 50%;
     width: 20vw;
+}
+
+.schedule-content {
+    margin: 0.5vw 0.5vw;
+    padding: 0.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.day {
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.hours {
+    grid-column: 2;
+
+}
+
+.text-box {
+    text-align: left;
+}
+
+.text-container {
+    justify-content: center;
+}
+
+@media screen {
+    .icon {
+        bottom: 5%;
+        left: calc(50% - 60px)
+    }
 }
 </style>

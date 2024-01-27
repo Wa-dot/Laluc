@@ -137,7 +137,8 @@
         },
         "product5": {
             "name": "Ratafia",
-            "description": "Go la clem, go !",
+            "subtitle": "A unique taste experience",
+            "description": "Discover the exquisite flavor of ratafia. Our ratafia, crafted with passion and expertise, offers a unique taste experience that will awaken your senses. This delightful aperitif unveils a perfect balance between the sweetness of fruits and the subtle warmth of alcohol. The enchanting aromas of nuts, dried fruits, and spices create a harmonious symphony that will tantalize your palate with every sip. This bottle of ratafia embodies the art of mixology, ready to be enjoyed on its own as an aperitif or incorporated into sophisticated cocktails. Its complex flavor profile makes it an ideal choice to accompany fine cheeses, dried fruits, or simply to celebrate special moments in life. Each bottle is the result of old tradition, combining artisanal expertise and superior quality ingredients. Treat yourself or your loved ones to this gustatory treasure and let yourself be carried away by the elegance and refinement of ratafia. This bottle embodies the essence of conviviality and sophistication.",
             "category": "Vin",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -173,5 +174,22 @@
     "history": {
         "title": "Who we are",
         "intro": "Winemaker landlord, cooperative grower for 3 generations, we bring all our attention to the plots from many transmissions dating back to known origins since 1670. Some of these lands happened to be suitable for the cultivation of the vine by their sub-soils with a tendency to limestone and sandy-limestone, their south-east facing slopes and their beautiful sunshine. These 3 elements combine to give the wines a quality development with a touch of freshness. Following the use of rootstocks to ward off phylloxera, vines were replanted in the family as early as 1956. Each year, while care begins with winter pruning, it only ends with the hand-picking of the grapes. That's why Xavier likes to say to his 3 children, Clémence, Héloïse and Pierre-Baptiste: 'The plant speaks to us'. Attentive to the environment in which we have been evolving for many years, we recuperate rainwater, work the soil and grass our vines. In this way, we try to limit inputs as much as possible and reduce Co2 emissions on our own scale. The estate is certified VDC: Viticulture Durable en Champagne."
+    },
+    "schedule": {
+        "title": "Horaires d'ouverture",
+        "intro": [
+            [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            [
+                "4pm to 10pm",
+                "9.30am to 12pm"
+            ]
+        ]
     }
 }

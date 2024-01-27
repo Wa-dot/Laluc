@@ -26,5 +26,6 @@ export default {
 <style lang="scss">
 .container {
     bottom: 0px;
+    
 }
 </style>

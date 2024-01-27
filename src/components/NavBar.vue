@@ -10,12 +10,8 @@
             <li @click="closeMobileNav()">
                 <router-link to="/products" class="unline-center">{{ $t("nav.product") }}</router-link>
             </li>
-            <!-- <li @click="closeMobileNav()">
-                <router-link to="/" @click="scrollToSection('terroir-home')" class="unline-center">{{ $t("nav.terroir")
-                }}</router-link>
-            </li> -->
             <li @click="closeMobileNav()">
-                <router-link to="/schedule" class="unline-center">{{ $t("contact.contactUs")
+                <router-link to="/contact" class="unline-center">{{ $t("contact.contactUs")
                 }}</router-link>
             </li>
             <img v-if="$i18n.locale === 'fr'" src="../assets/icon/flags/us.svg" alt="language fr" class="lang"
@@ -138,6 +134,7 @@ ul.nav-links img {
 #burger {
     display: none;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 #burger div {
@@ -230,8 +227,9 @@ ul.dropdown-menu a {
     }
 
     .lang {
-        padding-top: 5em;
-        ;
+        padding-top: 15em;
+        height: 50px;
+        width: 50px;
     }
 }
 

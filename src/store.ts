@@ -2,11 +2,11 @@ import { reactive } from "vue";
 
 export const images = reactive({
     products: [
-        'LalucBottles/Brut.webp',
-        'LalucBottles/BrutRose.webp',
-        'LalucBottles/Reserve.webp',
-        'LalucBottles/Eveillescence.webp',
-        'LalucBottles/Eveillescence.webp'],
+        'LalucBottles/BRUT.png',
+        'LalucBottles/BRUT ROSE.png',
+        'LalucBottles/RESERVE.png',
+        'LalucBottles/EVEILLESCENCE.png',
+        'LalucBottles/ratafia.png'],
     sn: ['/facebook.svg',
         './twitter.svg',
         './insta.svg',

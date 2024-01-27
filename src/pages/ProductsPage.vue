@@ -90,12 +90,9 @@ export default {
     display: none;
 }
 
-.profile-image-right {
+.profile-image-right, .profile-image-left {
     margin-left: 20px;
-}
-
-.profile-image-left {
-    margin-right: 20px;
+    max-width: 40%;
 }
 
 .category {

@@ -41,7 +41,7 @@
                 </a>
             </div>
             <div class="footer__company">
-                <p>© 2023 {{ $t("contact.company") }}. {{ $t("home.allRightReserved") }}.</p>
+                <p>© 2023 {{ $t("contact.company") }}. {{ $t("home.allRightReserved") }}</p>
             </div>
         </div>
     </footer>

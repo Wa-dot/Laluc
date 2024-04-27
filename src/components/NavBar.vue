@@ -87,7 +87,6 @@ nav {
 
 #logo #txtLogo {
     padding-top: 5px;
-    text-decoration: none;
 }
 
 div#logo a {
@@ -97,6 +96,7 @@ div#logo a {
     font-size: 2em;
     font-family: $logo-font;
     display: flex;
+    text-decoration: none;
 }
 
 ul.nav-links {

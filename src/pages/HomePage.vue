@@ -174,7 +174,7 @@ export default {
 .text-box {
     color: $primary-color;
     font-size: calc(15px + 0.7vw);
-    text-align: justify;
+    text-align: center;
 }
 
 section {
@@ -266,7 +266,7 @@ section .text-container .text-box {
     margin-top: 10px;
     display: block;
     border-radius: 50%;
-    width: 20vw;
+    width: 15vw;
 }
 
 .schedule-content {
@@ -289,7 +289,7 @@ section .text-container .text-box {
 }
 
 .text-box {
-    text-align: left;
+    text-align: center;
 }
 
 .text-container {

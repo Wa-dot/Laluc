@@ -1,6 +1,6 @@
 {
     "nav": {
-        "name": "Laluc",
+        "name": "Champagne Xavier Laluc",
         "about-us": "About us",
         "product": "Our products",
         "terroir": "Our terroir",
@@ -8,7 +8,7 @@
     },
     "home": {
         "header": "Welcome to Champagne Xavier Laluc",
-        "allRightReserved": "All right reserved"
+        "allRightReserved": "All right reserved. Alcohol abuse is dangerous for health. To consume with moderation."
     },
     "contact": {
         "company": "Xavier Laluc",
@@ -98,7 +98,7 @@
         "product1": {
             "name": "Champagne Brut",
             "subtitle": "Simplicity",
-            "description": "With a fine blend of 60% Pinot Meunier, 30% Pinot Noir and 10% Chardonnay, this champagne is accessible in its flavors, and astonishing in its infinite possibilities for pairing. It is made from 57% reserve wines, giving it a unique consistency over the years. Its fruitiness will never disappoint your aperitifs, meats or fish. Enjoy it chilled by the pool or by the fire, it's synonymous with carefree celebration! It's also available in half-bottle format for solo pleasures, and in Magnum or Jeroboam for those who think big!",
+            "description": "With a fine blend of Pinot Meunier, Pinot Noir and Chardonnay, this champagne is accessible in its flavors, and astonishing in its infinite possibilities for pairing. It is made from reserve wines, giving it a unique consistency over the years. Its fruitiness will never disappoint your aperitifs, meats or fish. Enjoy it chilled by the pool or by the fire, it's synonymous with carefree celebration! It's also available in half-bottle format for solo pleasures, and in Magnum or Jeroboam for those who think big!",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -108,7 +108,7 @@
         "product2": {
             "name": "Champagne Rosé",
             "subtitle": "Sweetness for everyone",
-            "description": "The blend is made with 50% reserve wine contributed by 44% Pinot Noir, 36% Pinot Meunier and 20% Chardonnay. A full-bodied, salmon-colored color. On the nose, notes of figs, red plums and wild strawberries lead the palate to become more lively, with balanced fluidity and hints of confectionery. Despite its sweetness, it's a wine everyone can enjoy. It goes just as well with your most sophisticated desserts as with a simple chocolate fondant, to finish your lunches and dinners in the most beautiful way. ",
+            "description": "The blend is made with reserve wine add by Pinot Noir, Pinot Meunier and Chardonnay. A full-bodied, salmon-colored color. On the nose, notes of figs, red plums and wild strawberries lead the palate to become more lively, with balanced fluidity and hints of confectionery. Despite its sweetness, it's a wine everyone can enjoy. It goes just as well with your most sophisticated desserts as with a simple chocolate fondant, to finish your lunches and dinners in the most beautiful way. ",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -118,7 +118,7 @@
         "product3": {
             "name": "Champagne Cuvée réserve",
             "subtitle": "Perfect balanced",
-            "description": "It will surprise you with the elegance of its bubbles and its voluptuous tone. The nose reveals brioche, followed by subtle citrus, lime and verbena aromas. Taste finesse begins with a pastry-like aroma of raisin bread, followed by notes of pomegranate and mirabelle plum. Composed of 39% Pinot Noir, 20% Pinot Meunier and 41% Chardonnay, it brings out the more than 10 million bubbles in a bottle of champagne with unrivalled vigor. This champagne is the perfect balance between elegance and festivity, and punctuates your summer evenings in the most beautiful way.",
+            "description": "It will surprise you with the elegance of its bubbles and its voluptuous tone. The nose reveals brioche, followed by subtle citrus, lime and verbena aromas. Taste finesse begins with a pastry-like aroma of raisin bread, followed by notes of pomegranate and mirabelle plum. Composed of Pinot Noir, Pinot Meunier and Chardonnay, it brings out the more than 10 million bubbles in a bottle of champagne with unrivalled vigor. This champagne is the perfect balance between elegance and festivity, and punctuates your summer evenings in the most beautiful way.",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -148,28 +148,7 @@
     },
     "terroir": {
         "title": "Our terroir",
-        "intro": "Located on a beautiful hill in the Marne region north of Reims, in the Champagne appellation area and on the Saint Thierry massif, the Xavier Laluc family estate invites you to discover its world of flavors,",
-        "terroir1": {
-            "name": "Terroir 1",
-            "description": "Description du terroir n°1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 1"
-            }
-        },
-        "terroir2": {
-            "name": "Terroir 2",
-            "description": "Description du terroir n°2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 2"
-            }
-        },
-        "terroir3": {
-            "name": "Terroir 3",
-            "description": "Description du terroir n°3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 3"
-            }
-        }
+        "intro": "We are located on a beautiful hill in the Marne region north of Reims, in the Champagne appellation area and on the Saint Thierry massif. The Champagne Xavier Laluc family estate invites you to discover its world of flavors,"
     },
     "history": {
         "title": "Who we are",
@@ -187,8 +166,8 @@
                 "Saturday"
             ],
             [
-                "4pm to 10pm",
-                "9.30am to 12pm"
+                "4pm to 9pm",
+                "9.30am to 5pm"
             ]
         ]
     }

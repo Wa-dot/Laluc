@@ -87,6 +87,7 @@ nav {
 
 #logo #txtLogo {
     padding-top: 5px;
+    text-decoration: none;
 }
 
 div#logo a {

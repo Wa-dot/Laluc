@@ -1,6 +1,6 @@
 {
     "nav": {
-        "name": "X.Laluc",
+        "name": "Champagne Xavier Laluc",
         "about-us": "A propos de nous",
         "product": "Nos produits",
         "terroir": "Notre terroir",
@@ -8,7 +8,7 @@
     },
     "home": {
         "header": "Bienvenue au Champagne Xavier Laluc",
-        "allRightReserved": "Tous droits réservés"
+        "allRightReserved": "Tous droits réservés. Attention l'abus d'alcool est dangereux pour la santé. A consommer avec modération."
     },
     "contact": {
         "company": "Xavier Laluc",
@@ -111,7 +111,7 @@
         "product1": {
             "name": "Champagne Brut",
             "subtitle": "La simplicité",
-            "description": "Par un fin alliage de 60% de Pinot Meunier, 30% de Pinot Noir et 10% de Chardonnay, ce champagne accessible par ses saveurs, étonne par l'infinie possibilité d'accords. Il est composé de 57% de vins de réserves, lui donnant une constance unique au travers les années. Par son fruité, il ne décevra jamais vos apéritifs, comme vos viandes et poissons. À déguster frais au bord d'une piscine comme au coin d'un feu de cheminée, il est synonyme de fête et d'insouciance ! Il existe aussi en format demi-bouteille pour les plaisirs solos, en Magnum ou Jéroboam pour ceux qui voient les choses en grand !",
+            "description": "Par un fin alliage de de Pinot Meunier, de Pinot Noir et de Chardonnay, ce champagne accessible par ses saveurs, étonne par l'infinie possibilité d'accords. Il est composé de de vins de réserves, lui donnant une constance unique au travers les années. Par son fruité, il ne décevra jamais vos apéritifs, comme vos viandes et poissons. À déguster frais au bord d'une piscine comme au coin d'un feu de cheminée, il est synonyme de fête et d'insouciance ! Il existe aussi en format demi-bouteille pour les plaisirs solos, en Magnum ou Jéroboam pour ceux qui voient les choses en grand !",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -121,7 +121,7 @@
         "product2": {
             "name": "Champagne Rosé",
             "subtitle": "La douceur ouverte à tous",
-            "description": "L'assemblage y est réalisé avec 50% de vin de réserve apporté par 44% de Pinot Noir, 36 % de Pinot Meunier et 20 % de Chardonnay. Corsée, la teinte de sa robe est d'une intensité saumon. Au nez, des notes de figues, de prunes rouges et de fraises des bois amènent le palais à gagner en vivacité avec une fluidité équilibrée et des touches de confiserie. Malgré sa douceur, il reste affectionné et accessible à tous. Il s'accorde aussi bien avec vos desserts les plus sophistiqués qu'avec un simple fondant au chocolat, pour finir vos déjeuners et dîners de la plus belle des manières. ",
+            "description": "L'assemblage est réalisé avec de vin de réserve apporté à du Pinot Noir, du Pinot Meunier et du Chardonnay. Corsée, la teinte de sa robe est d'une intensité saumon. Au nez, des notes de figues, de prunes rouges et de fraises des bois amènent le palais à gagner en vivacité avec une fluidité équilibrée et des touches de confiserie. Malgré sa douceur, il reste affectionné et accessible à tous. Il s'accorde aussi bien avec vos desserts les plus sophistiqués qu'avec un simple fondant au chocolat, pour finir vos déjeuners et dîners de la plus belle des manières. ",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -131,7 +131,7 @@
         "product3": {
             "name": "Champagne Cuvée réserve",
             "subtitle": "L'équilibre parfait",
-            "description": "Il vous surprendra par, l'élégance de ces bulles et son ton voluptueux. Le nez ressent la brioche puis les arômes d'agrumes, de citrons verts et de verveine tout en subtilité. La finesse gustative commence par un côté pâtissier de pain aux raisins pour se poursuivre avec des notes de grenade et de mirabelle. Il est composé à 39 % de Pinot Noir, 20 % de Pinot Meunier et 41 % de Chardonnay, et fais ressortir les plus de 10 millions de bulles présentes dans une bouteille de champagne avec une vigueur inégalée. Ce champagne est l'équilibre parfait entre élégance et festivités, et ponctue vos soirées d'été de la plus belle des manières.",
+            "description": "Il vous surprendra par l'élégance de ces bulles et son ton voluptueux. Le nez ressent la brioche puis les arômes d'agrumes, de citrons verts et de verveine tout en subtilité. La finesse gustative commence par un côté pâtissier de pain aux raisins pour se poursuivre avec des notes de grenade et de mirabelle. Il est composé de Pinot Noir, de Pinot Meunier et de Chardonnay. Il fait ressortir les plus de 10 millions de bulles présentes dans une bouteille de champagne avec une vigueur inégalée. Ce champagne est l'équilibre parfait entre élégance et festivités, et ponctue vos soirées d'été de la plus belle des manières.",
             "category": "Champagne",
             "img": {
                 "src": "/bottleineTest.jpg",
@@ -161,28 +161,7 @@
     },
     "terroir": {
         "title": "Notre terroir",
-        "intro": "Située sur un joli mont dans la marne au nord de Reims, appartenant à l'aire de l'appellation du champagne et au massif de Saint Thierry, la maison familiale Xavier LALUC vous invite à découvrir son monde de saveurs.",
-        "terroir1": {
-            "name": "Terroir 1",
-            "description": "Description du terroir n°1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 1"
-            }
-        },
-        "terroir2": {
-            "name": "Terroir 2",
-            "description": "Description du terroir n°2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 2"
-            }
-        },
-        "terroir3": {
-            "name": "Terroir 3",
-            "description": "Description du terroir n°3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Eget arcu dictum varius duis. Nisl pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut. Porta lorem mollis aliquam ut porttitor leo a. Facilisis gravida neque convallis a cras. Turpis nunc eget lorem dolor sed viverra. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Non sodales neque sodales ut etiam sit. Ultrices sagittis orci a scelerisque. Maecenas volutpat blandit aliquam etiam. Tincidunt vitae semper quis lectus. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida in fermentum et sollicitudin ac orci phasellus egestas.",
-            "img": {
-                "alt": "Terroir 3"
-            }
-        }
+        "intro": "Nous sommes situés sur un joli mont dans la marne au nord de Reims, appartenant à l'aire de l'appellation du champagne et au massif de Saint Thierry. La maison familiale Champagne Xavier LALUC vous invite à découvrir son monde de saveurs."
     },
     "history": {
         "title": "Qui sommes nous ?",
@@ -200,8 +179,8 @@
                 "Samedi"
             ],
             [
-                "16h30 à 22h",
-                "9h30 à 12h"
+                "16h30 à 21h",
+                "9h30 à 17h"
             ]
         ]
     }
